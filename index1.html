@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Layout</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="product-container">
+        <img src="Hyphen lip balm.jpeg" alt="Product Image" class="product-image">
+        <h2 class="product-name">Hyphen Vitamin-Infused Peptide Tinted Lip Balm - Marshmallow</h2>
+        <p class="product-price" id="productPrice">$399.00</p>
+        <p class="product-description">Hydrates, Plumps & Repairs Moisture Barrier</p>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+        <button class="buy-now-button" onclick="addToCart()">Add to Cart</button>
+        <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+    </div>
+    <div class="cart-container">
+        <h3>Shopping Cart</h3>
+        <p id="cartDetails"></p>
+        <p id="totalPrice"></p>
+    </div>
+
+    <script src="index1.js"></script>
+</body>
+</html>
